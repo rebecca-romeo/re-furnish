@@ -118,6 +118,9 @@ main {
   margin-right: 10px;
   color: #000;
 }
+.item_listing .item_listing_footer .item_location {
+  text-align: left;
+}
 .item_listing .item_listing_footer h5, .item_listing .item_listing_footer h6 {
   color: #000;
   font-family: "Roboto", sans-serif;
