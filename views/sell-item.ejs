@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Sell an item</title>
+
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- Bootstrap -->
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"
+      integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u"
+      crossorigin="anonymous"
+    />
+
+    <!-- Font awesome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+      integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+
+    <!-- Google fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Caveat:wght@700&family=Poppins:wght@300;600&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Favicon -->
+    <link
+      rel="icon"
+      href="https://github.com/rebecca-romeo/midterm-group-1/blob/homepage/docs/re-furnish_logo.png?raw=true"
+    />
+
+    <!-- Stylesheets  -->
+    <link rel="stylesheet" href="/vendor/normalize-4.1.1.css" />
+    <link rel="stylesheet" href="/vendor/border-box.css" />
+    <link rel="stylesheet" href="/styles/layout.css" />
+    <link rel="stylesheet" href="/styles/global.css" />
+    <link rel="stylesheet" href="/styles/nav.css" />
+    <link rel="stylesheet" href="/styles/login.css" />
+    <link rel="stylesheet" href="/styles/sell.css" />
+    <link rel="stylesheet" href="/styles/footer.css" />
+
+    <!-- Scripts -->
+    <script src="/vendor/jquery-3.0.0.js"></script>
+    <script defer src="/scripts/app.js"></script>
+  </head>
+
+  <body>
+    <%- include('partials/nav') %>
+    <header class="banner">
+      <h2 class="wrapper">Sell Your Items</h2>
+    </header>
+
+    <div class="wrapper sell-item">
+      <h3>Create a new listing</h3>
+
+      <form
+        action="/sell/item"
+        method="POST"
+        class="sell-item-form"
+        id="sell-item-form"
+      >
+        <div class="form-container">
+          <label for="title"></label>
+
+          <!-- Item title -->
+          <input
+            type="text"
+            name="title"
+            placeholder="Title"
+            id="title"
+            required
+          />
+
+          <!-- Item price -->
+          <label for="price"></label>
+          <input
+            type="number"
+            name="price"
+            placeholder="$0"
+            id="price"
+            min="0"
+            required
+          />
+
+          <!-- Item condition -->
+          <label for="condition"></label>
+
+          <select name="condition" id="condition" class="condition" required>
+            <option disabled selected>Condition</option>
+            <option value="new">New</option>
+            <option value="used">Used</option>
+            <option value="good">Good</option>
+            <option value="poor">Poor</option>
+          </select>
+
+          <!-- Item category -->
+          <label for="category"></label>
+          <select name="category" id="category" class="category" required>
+            <option selected disabled>Category</option>
+            <option value="office">Office</option>
+            <option value="living room">Living Room</option>
+            <option value="bedroom">Bedroom</option>
+            <option value="dining room">Dining Room</option>
+            <option value="outdoor">Outdoor</option>
+            <option value="decor">Decor</option>
+          </select>
+
+          <!-- City -->
+          <label for="location-city"></label>
+          <input
+            type="text"
+            name="location_city"
+            placeholder="City"
+            id="location-city"
+            required
+          />
+
+          <!-- Province -->
+          <label for="location-province"></label>
+          <select
+            name="location_province"
+            id="location-province"
+            class="location-province"
+            required
+          >
+            <option selected disabled>Province</option>
+            <option value="AB">Alberta</option>
+            <option value="BC">British Columbia</option>
+            <option value="MB">Manitoba</option>
+            <option value="NB">New Brunswick</option>
+            <option value="NL">Newfoundland</option>
+            <option value="NS">Nova Scotia</option>
+            <option value="ON">Ontario</option>
+            <option value="PE">PEI</option>
+            <option value="QC">Quebec</option>
+            <option value="SK">Saskatchewan</option>
+          </select>
+        </div>
+
+        <!-- Photo URL -->
+        <label for="photo"></label>
+        <input
+          type="url"
+          name="photo"
+          id="photo"
+          placeholder="Image URL"
+          required
+        />
+
+        <!-- Item description -->
+        <label for="description"></label>
+        <input
+          type="text"
+          name="description"
+          placeholder="Description"
+          id="description"
+          required
+        />
+
+        <button type="submit" class="btn btn-primary">Sell Item</button>
+      </form>
+    </div>
+    <%- include('footer'); -%>
+  </body>
+</html>

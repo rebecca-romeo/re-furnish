@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>My Listings</title>
+
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- Bootstrap -->
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"
+      integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u"
+      crossorigin="anonymous"
+    />
+
+    <!-- Font awesome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+      integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+
+    <!-- Google fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Caveat:wght@700&family=Poppins:wght@300;600&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Favicon -->
+    <link
+      rel="icon"
+      href="https://github.com/rebecca-romeo/midterm-group-1/blob/homepage/docs/re-furnish_logo.png?raw=true"
+    />
+
+    <!-- Stylesheets  -->
+    <link rel="stylesheet" href="/vendor/normalize-4.1.1.css" />
+    <link rel="stylesheet" href="/vendor/border-box.css" />
+    <link rel="stylesheet" href="/styles/layout.css" />
+    <link rel="stylesheet" href="/styles/global.css" />
+    <link rel="stylesheet" href="/styles/nav.css" />
+    <link rel="stylesheet" href="/styles/login.css" />
+    <link rel="stylesheet" href="/styles/items.css" />
+    <link rel="stylesheet" href="/styles/footer.css" />
+
+    <script src="/vendor/jquery-3.0.0.js"></script>
+    <script defer src="/scripts/app.js"></script>
+  </head>
+
+  <body>
+    <%- include('partials/nav') %>
+    <header class="banner">
+      <h2 class="wrapper">My Listings</h2>
+    </header>
+
+    <main class="wrapper">
+      <ul class="item-list">
+        <% for(const item of items) { %>
+        <li class="individual-item">
+          <img src="<%= item.photo %>?raw=true" alt="" class="item-img" />
+          <div class="item-info-container">
+            <div class="item-info">
+              <% if (item.status_sold) { %>
+              <p class="btn btn-primary"><del>$<%= item.price %></del></p>
+              <% } else { %>
+              <p class="my-price">$<%= item.price %></p>
+              <% } %>
+              <h4><%= item.title %></h4>
+            </div>
+            <div><i class="fa-sharp fa-regular fa-heart fa-xl"></i></div>
+          </div>
+          <div class="item-info-container">
+            <div class="item-location">
+              <i class="fa-solid fa-location-dot"></i>
+              <p><%= item.location_city %>, <%= item.location_province %></p>
+            </div>
+            <div class="item-location">
+              <% if (item.status_sold) { %>
+              <form method="POST" action="/items/<%= item.id %>/sold">
+                <button type="submit" class="btn btn-sold">Sold</button>
+              </form>
+              <% } else { %>
+              <form method="POST" action="/items/<%= item.id %>">
+                <button type="submit" class="btn btn-markSold">
+                  Mark Sold
+                </button>
+              </form>
+              <% } %>
+              <form method="POST" action="/items/<%= item.id %>/delete">
+                <button type="submit" class="btn btn-delete">Delete</button>
+              </form>
+            </div>
+          </div>
+        </li>
+        <% } %>
+      </ul>
+    </main>
+
+    <%- include('footer'); -%>
+  </body>
+</html>

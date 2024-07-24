@@ -1,0 +1,39 @@
+.btn-primary {
+  background-color: #FAB005;
+  color: black;
+
+  &:hover {
+    background-color: #CAAF82;
+    color: black;
+  }
+}
+
+form {
+  input,
+  select {
+    border: 1.5px solid black;
+    border-radius: 1.1rem;
+    padding: 0.6rem;
+    width: 250px;
+    font-size: 1.5rem;
+  }
+
+  ::placeholder {
+    font-size: 1.5rem;
+    color: black;
+    opacity: 1;
+  }
+}
+
+h3 {
+  padding: 2rem 0;
+}
+
+.banner {
+  background-image: url("/assets/banner.jpg");
+  height: 15rem;
+  background-position: center;
+  background-size: cover;
+  display: flex;
+  align-items: center;
+}

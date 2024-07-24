@@ -1,0 +1,107 @@
+header {
+  font-family: "Caveat", cursive;
+}
+
+.item_box {
+  display: flex;
+  flex-direction: column;
+  margin: 10vh auto;
+  padding: 5rem;
+  background-color: #F7F7F7;
+  border: 1px solid rgb(148, 145, 145);
+  border-radius: 40px;
+}
+.item_box .item_box_top {
+  display: flex;
+  flex-direction: row;
+}
+.item_box .item_box_top .item_box_image img {
+  max-width: 400px;
+  border-radius: 10%;
+}
+.item_box .item_box_top .item_info {
+  display: flex;
+  flex-direction: column;
+  margin-left: 40px;
+  margin-top: 20px;
+}
+.item_box .item_box_top .item_info h1 {
+  color: #000;
+  font-family: "Caveat", cursive;
+  font-size: 70px;
+}
+.item_box .item_box_top .item_info .location {
+  color: #000;
+}
+.item_box .item_box_top .item_info .item-price {
+  max-width: 95px;
+  color: #000;
+  padding-top: 0.2em;
+  padding-bottom: 0.2em;
+  padding-right: 0.4em;
+  padding-left: 0.4em;
+  background-color: rgba(2, 185, 2, 0.5);
+  border-radius: 10px;
+  margin: 0.5em;
+}
+.item_box .item_box_top .item_info .location {
+  color: #000;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+.item_box .item_box_top .item_info .location i {
+  margin: 10px;
+  margin-right: 17px;
+}
+.item_box .item_box_top .item_info .category {
+  color: #000;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+.item_box .item_box_top .item_info .category i {
+  margin: 10px;
+}
+.item_box .item_box_top .item_info .condition {
+  color: #000;
+}
+.item_box .item_box_top .item_info .seller {
+  font-weight: bold;
+  display: flex;
+  justify-content: center;
+  background-color: #FAB005;
+  border-radius: 10px;
+  margin-bottom: 0.5em;
+  max-width: 200px;
+  padding: 1.5rem;
+}
+.item_box .item_box_top .item_info .seller:hover {
+  transform: scale(1.05);
+  background-color: #fedf96;
+  border: 2px solid #FAB005;
+}
+.item_box .item_box_top .item_info .sold {
+  color: #A40808;
+}
+.item_box .desc {
+  margin: 10px;
+  margin-bottom: 0;
+  color: #000;
+}
+.item_box .desc h4 {
+  font-size: 25px;
+}
+.item_box .desc h5 {
+  margin-bottom: 0;
+}
+
+.item_box_image_sold img {
+  max-width: 400px;
+  border-radius: 10%;
+  opacity: 0.5;
+}
+
+.itemh2 {
+  font-family: "Poppins";
+}/*# sourceMappingURL=item.css.map */

@@ -1,0 +1,42 @@
+.sell-item {
+  padding: 4rem 0;
+  margin: 0 auto;
+}
+.sell-item h3 {
+  color: #FAB005;
+  padding-left: 13rem;
+}
+
+.sell-item-form {
+  width: 80%;
+  margin: 0 auto;
+}
+.sell-item-form .form-container {
+  display: flex;
+  flex-wrap: wrap;
+  margin-bottom: -1rem;
+}
+.sell-item-form input,
+.sell-item-form select {
+  padding: 1rem;
+  margin-bottom: 1.5rem;
+  margin-right: 1rem;
+  width: 45%;
+}
+.sell-item-form input::-moz-placeholder {
+  color: rgb(111, 109, 109);
+}
+.sell-item-form input::placeholder,
+.sell-item-form select {
+  color: rgb(111, 109, 109);
+}
+.sell-item-form #description {
+  height: 15rem;
+  width: 91%;
+  display: block;
+  margin-top: -1rem;
+}
+.sell-item-form #photo {
+  display: block;
+  width: 91%;
+}/*# sourceMappingURL=sell.css.map */

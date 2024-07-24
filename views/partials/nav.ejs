@@ -1,0 +1,38 @@
+<nav>
+  <div class="wrapper">
+
+    <div class="nav-logo-search-container">
+      <img class="logo-img" src="https://github.com/rebecca-romeo/midterm-group-1/blob/homepage/docs/re-furnish_logo.png?raw=true">
+
+      <a href="/home" class="logo">re-furnish</a>
+      <% if(user) { %>
+        <p class="display-email"><%= user %></p>
+        <% } %>
+    </div>
+
+    <div class="nav-icons-buttons-container">
+      <div class="nav-icons-buttons-container">
+        <% if(user) { %>
+          <!-- If user's logged in:
+            * show the icons
+            * show the logout button -->
+          <ul class="icons-container">
+            <li><a href="/sell"><i class="fa-solid fa-plus nav-icons"></i></a></li>
+            <li><a href="/favorites"><i class="fa-solid fa-heart nav-icons"></i></a></li>
+            <li><a href="/items/userItem"><i class="fa-solid fa-user nav-icons" title="<%= user %>"></i></a></li>
+            <li><a href="/message"><i class="fa-solid fa-message nav-icons"></i></a></li>
+          </ul>
+      </div>
+
+      <a href="/auth/logout" class="btn btn-primary logout">logout</a>
+    <% }%>
+
+    <% if (!user) { %>
+      <!-- If user's not logged in:
+         * show login button only-->
+      <a href="/auth/login" class="btn btn-primary login">login</a>
+    <% } %>
+
+    </div>
+  </div>
+</nav>

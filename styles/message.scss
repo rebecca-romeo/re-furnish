@@ -1,0 +1,30 @@
+main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 5rem 0;
+}
+
+.message-container {
+  overflow: auto;
+  border: 2px solid black;
+  width: 80%;
+  border-radius: 2rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 2rem 0 2rem 4rem;
+}
+
+.individual-message {
+  border: 1px solid green;
+  padding: 1rem;
+  width: 80%;
+  margin-top: 1rem;
+  border-radius: 2rem;
+}
+
+.new-message-form {
+  margin-top: 3rem;
+}
+

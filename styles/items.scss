@@ -1,0 +1,79 @@
+.item-info,
+.item-info-container,
+.item-location {
+  display: flex;
+  align-items: center;
+}
+.individual-item {
+  background-color: rgb(239, 239, 239);
+  width: 30%;
+  margin: 2rem;
+  padding: 2rem;
+  border: 1px solid rgb(148, 145, 145);
+  border-radius: 2rem;
+}
+.item-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.item-img {
+  height: 80%;
+  width: 100%;
+}
+.item-info {
+  padding: 1rem 0;
+}
+.item-info-container{
+  justify-content: space-between;
+}
+.btn,
+.item-location i {
+  margin-right: 1rem;
+}
+.item-name {
+  padding-left: 1rem;
+}
+
+.my-price {
+  margin-right: 1rem;
+  background-color: rgba(2, 185, 2, 0.4);
+  padding: 0.6rem 1rem;
+  border-radius: 15%;
+  border: 0.5px solid black;
+}
+
+.error {
+  height: 60vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  color: #ff0000;
+}
+.btn-delete {
+  background-color: #FF0000;
+  margin-left: 1rem;
+  color: black;
+  &:hover {
+    background-color: #aa858a;
+    color: black;
+  }
+}
+.btn-sold {
+  background-color: #93c9da;
+  margin-left: 1rem;
+  color: black;
+  &:hover {
+    background-color: #8ab67d;
+    color: black;
+  }
+}
+.btn-markSold {
+  background-color: #FAB005;
+  margin-left: 1rem;
+  color: black;
+  &:hover {
+    background-color: #eecb77;
+    color: black;
+  }
+}

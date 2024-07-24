@@ -1,0 +1,115 @@
+$font-family: 'Roboto', sans-serif;
+$font-title: 'Caveat', cursive;
+$font-color: #000;
+
+header {
+  font-family: $font-title;
+}
+
+.item_box {
+  display: flex;
+  flex-direction: column;
+  margin: 10vh auto;
+  padding: 5rem;
+  background-color: #F7F7F7;
+  border: 1px solid rgb(148, 145, 145);
+  border-radius: 40px;
+  .item_box_top {
+    display: flex;
+    flex-direction: row;
+    .item_box_image {
+      img {
+      max-width: 400px;
+      border-radius: 10%;
+      }
+    }
+    .item_info {
+      display: flex;
+      flex-direction: column;
+      margin-left: 40px;
+      margin-top: 20px;
+      h1 {
+        color: $font-color;
+        font-family: $font-title;
+        font-size: 70px;
+      }
+      .location {
+        color: $font-color;
+      }
+      .item-price {
+        max-width: 95px;
+        color: #000;
+        padding-top: 0.2em;
+        padding-bottom: 0.2em;
+        padding-right: 0.4em;
+        padding-left: 0.4em;
+        background-color: rgba(2, 185, 2, 0.5);
+        border-radius: 10px;
+        margin: 0.5em;
+      }
+      .location {
+        color: $font-color;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        i {
+          margin: 10px;
+          margin-right: 17px;
+        }
+      }
+      .category {
+        color: #000;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        i {
+          margin: 10px;
+        }
+      }
+      .condition {
+        color: $font-color;
+      }
+      .seller {
+        font-weight: bold;
+        display: flex;
+        justify-content: center;
+        background-color: #FAB005;
+        border-radius: 10px;
+        margin-bottom: 0.5em;
+        max-width: 200px;
+        padding: 1.5rem;
+        &:hover {
+          transform: scale(1.05);
+          background-color: #fedf96;
+          border: 2px solid #FAB005;
+        }
+      }
+      .sold {
+        color: #A40808;
+      }
+    }
+  }
+  .desc {
+    margin: 10px;
+    margin-bottom: 0;
+    color: $font-color;
+    h4 {
+      font-size: 25px;
+    }
+    h5 {
+      margin-bottom: 0;
+    }
+  }
+}
+
+.item_box_image_sold {
+  img {
+    max-width: 400px;
+    border-radius: 10%;
+    opacity: 0.5;
+    }
+}
+
+.itemh2 {
+  font-family: 'Poppins';
+}

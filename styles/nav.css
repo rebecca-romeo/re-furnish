@@ -1,0 +1,62 @@
+nav .wrapper,
+.nav-logo-search-container,
+.nav-icons-buttons-container,
+.icons-container {
+  display: flex;
+  align-items: center;
+}
+
+.logo-img {
+  width: 0%;
+}
+
+nav {
+  padding: 1rem;
+  border-bottom: 2px solid #3a3c3a;
+}
+nav .wrapper {
+  justify-content: space-between;
+}
+nav .logo {
+  font-family: "Caveat", cursive;
+  font-size: 3rem;
+  margin-right: 1.5rem;
+}
+nav .logo:hover {
+  color: #CAAF82;
+}
+nav .nav-icons {
+  font-size: 2.5rem;
+  padding-right: 1rem;
+}
+nav .nav-icons:hover {
+  color: #CAAF82;
+  transform: scale(1.2);
+  transition: 2ms;
+}
+
+.nav-search-form ::-moz-placeholder {
+  font-size: 1.5rem;
+  color: black;
+  opacity: 1;
+}
+
+.nav-search-form ::placeholder {
+  font-size: 1.5rem;
+  color: black;
+  opacity: 1;
+}
+.nav-search-form input {
+  border: 1.5px solid black;
+  border-radius: 1.1rem;
+  padding: 0.6rem;
+  width: 250px;
+  font-size: 1.5rem;
+}
+.nav-search-form button {
+  font-size: 1.9rem;
+  background: none;
+  border: none;
+  position: relative;
+  right: 33px;
+}/*# sourceMappingURL=nav.css.map */
