@@ -20,8 +20,8 @@ typed
   .typeString("furnish")
   .pauseFor(2000)
   .deleteChars(10)
-  .typeString("<div><img src='https://github.com/rebecca-romeo/midterm-group-1/blob/homepage/docs/re-furnish_logo.png?raw=true'></img></div>")
-  .pauseFor(5000)
+  // .typeString("<div><img src='https://github.com/rebecca-romeo/re-furnish/blob/main/docs/re-furnish_logo.png'></img></div>")
+  .pauseFor(3000)
   .start();
 
 // adds a new item on homepage
