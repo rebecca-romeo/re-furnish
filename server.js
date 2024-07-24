@@ -56,7 +56,7 @@ app.use('/auth', authRoutes);
 app.use('/sell', sellItemRoute);
 app.use('/message', messageRoute);
 app.use('/items', itemRoutes);
-app.use('/item', itemPageRoutes)
+app.use('/item', itemPageRoutes);
 // Note: mount other resources here, using the same pattern above
 
 // Home page
@@ -64,7 +64,7 @@ app.use('/item', itemPageRoutes)
 // Separate them into separate routes files (see above).
 
 app.get('/home', (req, res) => {
-  const templateVars = { user: req.session.user }
+  const templateVars = { user: req.session.user };
   res.render('index', templateVars);
 });
 

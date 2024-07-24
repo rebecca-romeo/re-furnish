@@ -1,3 +1,7 @@
+main {
+  padding: 5rem 0;
+}
+
 .item-info,
 .item-info-container,
 .item-location {
@@ -6,11 +10,16 @@
 }
 .individual-item {
   background-color: rgb(239, 239, 239);
+  min-width: 35rem;
   width: 30%;
   margin: 2rem;
   padding: 2rem;
   border: 1px solid rgb(148, 145, 145);
   border-radius: 2rem;
+  .item-location {
+    padding-bottom: 2rem;
+  }
+
 }
 .item-list {
   display: flex;
