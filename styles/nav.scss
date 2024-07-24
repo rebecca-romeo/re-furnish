@@ -19,15 +19,14 @@ nav {
     font-size: 3rem;
     margin-right: 1.5rem;
     &:hover {
-      color: #CAAF82;
-
+      color: #caaf82;
     }
   }
   .nav-icons {
     font-size: 2.5rem;
     padding-right: 1rem;
     &:hover {
-      color: #CAAF82;
+      color: #caaf82;
       transform: scale(1.2);
       transition: 2ms;
     }
@@ -53,5 +52,71 @@ nav {
     border: none;
     position: relative;
     right: 33px;
+  }
+}
+
+.display-email {
+  display: none;
+}
+
+.hamburger-menu {
+  display: none;
+}
+
+#menu-toggle {
+  display: none;
+}
+
+.menu-icon {
+  display: none;
+  font-size: 2.5rem;
+  cursor: pointer;
+}
+
+.menu {
+  display: none;
+  flex-direction: column;
+  align-items: flex-end;
+}
+
+@media (max-width: 650px) {
+  .nav-icons-buttons-container {
+    display: none;
+  }
+
+  .display-email {
+    display: none;
+  }
+
+  .hamburger-menu {
+    display: flex;
+  }
+
+  #menu-toggle:checked + .menu-icon + .menu {
+    display: flex;
+  }
+
+  .menu {
+    .icons-container i{
+      font-size: 2rem;
+      padding: 1rem 0.5rem;
+    }
+    .logout {
+      font-size: 11px;
+    }
+  }
+
+  .menu-icon {
+    display: block;
+  }
+
+  .menu {
+    display: none;
+  }
+}
+
+@media (min-width: 651px) {
+  .display-email {
+    display: block;
   }
 }
