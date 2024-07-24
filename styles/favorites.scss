@@ -7,7 +7,6 @@ main {
 .item-location {
   display: flex;
   align-items: center;
-
 }
 
 .individual-item {
@@ -34,14 +33,13 @@ main {
 
 .item-info {
   padding: 1rem 0;
-
 }
 
-.item-info-container{
+.item-info-container {
   justify-content: space-between;
 }
 
-.fav-price{
+.fav-price {
   margin-right: 1rem;
   background-color: rgba(2, 185, 2, 0.4);
   padding: 0.6rem 1rem;
@@ -64,16 +62,6 @@ main {
     transform: scale(1.2);
   }
 }
-
-// .test {
-//   height: 60vh;
-//   display: flex;
-//   flex-direction: column;
-//   justify-content: center;
-//   h3 {
-//     color: #FAB005;
-//   }
-// }
 
 .heart-fav-button {
   border: none;
