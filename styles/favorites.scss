@@ -12,6 +12,7 @@ main {
 
 .individual-item {
   background-color: rgb(239, 239, 239);
+  min-width: 35rem;
   width: 30%;
   margin: 2rem;
   padding: 2rem;
@@ -26,6 +27,7 @@ main {
 }
 
 .item-img {
+  // height: 80%;
   height: auto;
   width: 100%;
 }
@@ -63,15 +65,15 @@ main {
   }
 }
 
-.test {
-  height: 60vh;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  h3 {
-    color: #FAB005;
-  }
-}
+// .test {
+//   height: 60vh;
+//   display: flex;
+//   flex-direction: column;
+//   justify-content: center;
+//   h3 {
+//     color: #FAB005;
+//   }
+// }
 
 .heart-fav-button {
   border: none;
