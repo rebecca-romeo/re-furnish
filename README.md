@@ -42,7 +42,7 @@ Users can "like" items and refer to them later in the favorites page. They can a
 
 Users can create a new listing to sell their items.
 
-!["Create a new listing to sell an item."](https://github.com/rebecca-romeo/midterm-group-1/blob/master/docs/4%20-%20create%20a%20new%20listing.jpeg)
+!["Create a new listing to sell an item."](https://github.com/rebecca-romeo/re-furnish/blob/main/docs/4%20-%20create%20a%20new%20listing.jpeg)
 
 ## View your listings, mark them sold, or delete a listing
 
