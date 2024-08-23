@@ -1,6 +1,5 @@
 # re-furnish
 
-
 _Where pre-loved furniture finds a new home!_
 
 re-furnish is a full stack, multi-page web application that allows users to post furniture that they want to sell and contact sellers for items they are interested in. Our company aims to promote sustainability and buying secondhand by offering affordable and local options for our customers
@@ -22,26 +21,31 @@ Admins:
 # Final Product
 
 ## View all items, and search by price
+
 Users can view all the items on the homepage and filter them by price.
 
 !["View items on homepage and filter listings by price."](https://github.com/rebecca-romeo/midterm-group-1/blob/master/docs/1%20-%20homepage%20and%20filter%20feature.gif)
 
 ## View more information, and contact the seller
+
 Users can view an item's description and contact the seller.
 
 !["View item description and contact seller."](https://github.com/rebecca-romeo/midterm-group-1/blob/master/docs/2%20-%20item%20description.gif)
 
 ## Like and unlike photos
+
 Users can "like" items and refer to them later in the favorites page. They can also remove items from favourites.
 
 !["Like items and view it in favorites page."](https://github.com/rebecca-romeo/midterm-group-1/blob/master/docs/3%20-%20add%20item%20to%20favorites.gif)
 
 ## Sell an item
+
 Users can create a new listing to sell their items.
 
-!["Create a new listing to sell an item."](https://github.com/rebecca-romeo/midterm-group-1/blob/master/docs/4%20-%20create%20a%20new%20listing.png)
+!["Create a new listing to sell an item."](https://github.com/rebecca-romeo/midterm-group-1/blob/master/docs/4%20-%20create%20a%20new%20listing.jpeg)
 
 ## View your listings, mark them sold, or delete a listing
+
 Users can view their listings, mark items as sold or unsold, or delete the listing from the site.
 
 !["View listings to mark items as sold or unsold, or delete it from the site."](https://github.com/rebecca-romeo/midterm-group-1/blob/master/docs/5%20-%20listings%20page%20features.gif)
