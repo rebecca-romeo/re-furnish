@@ -5,7 +5,6 @@
         class="logo-img"
         src="https://github.com/rebecca-romeo/re-furnish/blob/main/docs/re-furnish_logo.png"
       />
-
       <a href="/home" class="logo">re-furnish</a>
       <% if(user) { %>
       <p class="display-email"><%= user %></p>
@@ -13,11 +12,41 @@
     </div>
 
     <div class="nav-icons-buttons-container">
-      <div class="nav-icons-buttons-container">
-        <% if(user) { %>
-        <!-- If user's logged in:
-            * show the icons
-            * show the logout button -->
+      <% if(user) { %>
+      <!-- If user's logged in:
+          * show the icons
+          * show the logout button -->
+      <ul class="icons-container">
+        <li>
+          <a href="/sell"><i class="fa-solid fa-plus nav-icons"></i></a>
+        </li>
+        <li>
+          <a href="/favorites"><i class="fa-solid fa-heart nav-icons"></i></a>
+        </li>
+        <li>
+          <a href="/items/userItem"
+            ><i class="fa-solid fa-user nav-icons" title="<%= user %>"></i
+          ></a>
+        </li>
+        <li>
+          <a href="/message"><i class="fa-solid fa-message nav-icons"></i></a>
+        </li>
+      </ul>
+      <a href="/auth/logout" class="btn btn-primary logout">logout</a>
+      <% } %> <% if (!user) { %>
+      <!-- If user's not logged in:
+       * show login button only-->
+      <a href="/auth/login" class="btn btn-primary login">login</a>
+      <% } %>
+    </div>
+
+    <!-- Hamburger Menu -->
+    <div class="hamburger-menu">
+      <input type="checkbox" id="menu-toggle" />
+      <label for="menu-toggle" class="menu-icon">
+        <i class="fa fa-bars"></i>
+      </label>
+      <div class="menu">
         <ul class="icons-container">
           <li>
             <a href="/sell"><i class="fa-solid fa-plus nav-icons"></i></a>
@@ -34,14 +63,13 @@
             <a href="/message"><i class="fa-solid fa-message nav-icons"></i></a>
           </li>
         </ul>
+        <% if(user) { %>
+        <p class="display-email"><%= user %></p>
+        <a href="/auth/logout" class="btn btn-primary logout">logout</a>
+        <% } else { %>
+        <a href="/auth/login" class="btn btn-primary login">login</a>
+        <% } %>
       </div>
-
-      <a href="/auth/logout" class="btn btn-primary logout">logout</a>
-      <% }%> <% if (!user) { %>
-      <!-- If user's not logged in:
-         * show login button only-->
-      <a href="/auth/login" class="btn btn-primary login">login</a>
-      <% } %>
     </div>
   </div>
 </nav>

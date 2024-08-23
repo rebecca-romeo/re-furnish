@@ -11,6 +11,7 @@ main {
 
 .individual-item {
   background-color: rgb(239, 239, 239);
+  min-width: 35rem;
   width: 30%;
   margin: 2rem;
   padding: 2rem;
@@ -59,16 +60,6 @@ main {
 }
 .favorited-true:hover {
   transform: scale(1.2);
-}
-
-.test {
-  height: 60vh;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-}
-.test h3 {
-  color: #FAB005;
 }
 
 .heart-fav-button {
