@@ -74,4 +74,14 @@ main {
 .btn-markSold:hover {
   background-color: #eecb77;
   color: black;
+}
+
+.btn-sold {
+  background-color: #fab005;
+  margin-left: 1rem;
+  color: black;
+}
+.btn-sold:hover {
+  background-color: #eecb77;
+  color: black;
 }/*# sourceMappingURL=items.css.map */

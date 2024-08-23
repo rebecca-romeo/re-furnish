@@ -69,3 +69,13 @@ main {
     color: black;
   }
 }
+
+.btn-sold {
+  background-color: #fab005;
+  margin-left: 1rem;
+  color: black;
+  &:hover {
+    background-color: #eecb77;
+    color: black;
+  }
+}
